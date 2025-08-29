@@ -9,7 +9,7 @@ pipeline {
 
         stage('hello') {
             steps {
-                bat '"C:\\Users\\kabilan\\AppData\\Local\\Programs\\Python\\Python313\\python.exe" demo.py'
+                bat '"C:\\Users\\kabilan\\AppData\\Local\\Programs\\Python\\Python313\\python.exe" demo.py %x_value% %y_value%'
             }
         }
     }
